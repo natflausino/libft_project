@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 14:26:08 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/18 14:31:50 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/19 23:31:29 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	ft_putendl_fd(char *s, int fd)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		write (fd, &s[i], 1);
+		write(fd, &s[i], 1);
 		i++;
 	}
-	write (fd, "\n" , 1);
+	write(fd, "\n", 1);
 }

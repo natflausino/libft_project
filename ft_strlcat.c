@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 22:55:48 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/17 01:33:26 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/19 23:35:23 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	if (j < size)
 		dst[i + j] = 0;
-	return(j + ft_strlen(src));
+	return (j + ft_strlen(src));
 }
