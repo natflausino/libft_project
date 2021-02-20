@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 23:58:29 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 23:37:06 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/20 01:39:54 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
+	if (!dst || !src)
+		return (0);
 	if (size == 0)
 		return (strlen(src));
 	while (i < (size - 1) && src[i] != '\0')
