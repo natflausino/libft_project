@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 20:11:18 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 17:41:08 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/19 23:12:49 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,9 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
+
+/* Extra Addicional functions */
+
+int		ft_isspace(int chr);
 
 #endif
