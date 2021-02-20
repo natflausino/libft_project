@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 02:43:27 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/20 01:42:19 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/20 03:46:24 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (src >= dst)
 		ft_memcpy(dst, src, len);
 	else
-		while (len--)
-			d[len] = s[len];
+		while (len > 0)
+		{
+			d[len - 1] = s[len - 1];
+			len--;
+		}
 	return (d);
 }
