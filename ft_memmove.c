@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/15 02:43:27 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/20 03:46:24 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/20 23:01:12 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 
 	s = (unsigned char *)src;
 	d = (unsigned char *)dst;
-	if (!src || !dst)
-		return (0);
 	if (dst == src)
 		return (dst);
 	if (src >= dst)

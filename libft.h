@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 20:11:18 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/20 21:49:58 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/21 01:22:06 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 # include <string.h>
 # include <stddef.h>
 
-/* Part 1 - Libc functions */
+/*
+**  Part 1 - Libc functions
+*/
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -45,7 +47,9 @@ char	*ft_strdup(const char *s1);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 size_t		ft_strlcat(char *dst, const char *src, size_t size);
 
-/* Part 2 - Additional functions */
+/*
+**  Part 2 - Additional functions
+*/
 
 char	*ft_substr(char const *s, unsigned int start,size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
