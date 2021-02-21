@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 20:11:18 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/21 01:22:06 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/21 17:38:53 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,8 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	**ft_split(char const *s, char c);
 
 /* Extra Addicional functions */
 
