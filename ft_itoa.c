@@ -6,29 +6,31 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 17:28:02 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/21 04:41:07 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/21 05:12:04 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	conver_putnbr(int c, char *str, size_t i)
+static void	conver_putnbr(int c, char *str, long int i)
 {
+	unsigned int m;
+	m = c;
 	if (c < 0)
 	{
-		c = (c * (-1));
 		str[0] = '-';
+		m = (m * (-1));
 	}
-	if (c >= 10)
-		conver_putnbr((c / 10), str, (i - 1));
-	str[i] = (c % 10) + '0';
+	if (m >= 10)
+		conver_putnbr((m / 10), str, (i - 1));
+	str[i] = (m % 10) + '0';
 }
 
 char	*ft_itoa(int n)
 {
 	char	*str;
 	long int	j;
-	size_t	count;
+	long int	count;
 
 	j = n;
 	count = 0;
