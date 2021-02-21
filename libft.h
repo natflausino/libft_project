@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 20:11:18 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 23:12:49 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/20 21:49:58 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <stddef.h>
 
 /* Part 1 - Libc functions */
 
@@ -31,8 +32,8 @@ int		ft_atoi(const char *str);
 void	ft_bzero(void *s, unsigned long int n);
 void	*ft_calloc(unsigned long int count, unsigned long int size);
 void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n);
-void	*ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n);
+void	*ft_memcpy(void *dst, const void *src, size_t n);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
