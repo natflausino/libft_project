@@ -6,11 +6,11 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 17:08:08 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 00:13:16 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 00:45:36 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+# include "libft.h"
 
 static char		*ft_cpy(char *dst, const char *src, size_t size)
 {
@@ -50,7 +50,7 @@ static size_t	ft_num_word(char const *s, char deli)
 
 static char		*ft_apt_word(char const *s, size_t c)
 {
-	char 	*str_word;
+	char	*str_word;
 
 	str_word = (char *)malloc(sizeof(char) * c + 1);
 	if (!str_word)
@@ -60,12 +60,12 @@ static char		*ft_apt_word(char const *s, size_t c)
 	return (str_word);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	char	**str;
 	size_t	i;
 	size_t	j;
-	size_t count;
+	size_t	count;
 
 	i = 0;
 	count = 0;
@@ -74,7 +74,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	if (!s)
 		return (NULL);
-	while(s[i])
+	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
@@ -86,7 +86,6 @@ char	**ft_split(char const *s, char c)
 			str[count] = ft_apt_word(s + j, i - j);
 			count++;
 		}
-
 	}
 	str[count] = '\0';
 	return (str);

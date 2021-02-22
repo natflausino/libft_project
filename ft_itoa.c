@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 17:28:02 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/21 05:12:04 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 00:49:10 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 static void	conver_putnbr(int c, char *str, long int i)
 {
 	unsigned int m;
+
 	m = c;
 	if (c < 0)
 	{
@@ -26,16 +27,16 @@ static void	conver_putnbr(int c, char *str, long int i)
 	str[i] = (m % 10) + '0';
 }
 
-char	*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
-	char	*str;
+	char		*str;
 	long int	j;
 	long int	count;
 
 	j = n;
 	count = 0;
 	if (j <= 0)
-		count ++;
+		count++;
 	while (j)
 	{
 		j = (j / 10);
@@ -43,7 +44,7 @@ char	*ft_itoa(int n)
 	}
 	str = malloc(sizeof(char) * (count + 1));
 	if (!str)
-		return(NULL);
+		return (NULL);
 	str[count] = 0;
 	conver_putnbr(n, str, (count - 1));
 	return (str);

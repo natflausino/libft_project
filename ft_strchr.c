@@ -6,14 +6,14 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/16 02:24:18 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/20 22:38:30 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 00:20:15 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strchr(const char *s, int c)
 {
-	char *str;
-	int i;
+	char	*str;
+	int		i;
 
 	str = (char *)s;
 	i = 0;
