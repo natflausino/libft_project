@@ -6,11 +6,11 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 17:08:08 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 00:57:49 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 01:04:28 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 static char		*ft_cpy(char *dst, const char *src, size_t size)
 {
