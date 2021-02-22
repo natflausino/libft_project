@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 17:40:03 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/20 22:36:25 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 01:48:55 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (j && ft_strchr(set, s1[j]))
 		j--;
 	if ((int)(j - i + 1) <= 0)
-		return (malloc(1));
+		return (ft_calloc(1, 1));
 	return (ft_substr(s1, i, (j - i + 1)));
 }

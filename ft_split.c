@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 17:08:08 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 01:19:22 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 01:53:23 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,11 +67,10 @@ char			**ft_split(char const *s, char c)
 	size_t	j;
 	size_t	count;
 
+	if (!s || !(str = malloc(sizeof(char *) * (ft_num_word(s, c) + 1))))
+		return (NULL);
 	i = 0;
 	count = 0;
-	str = malloc(sizeof(char *) * (ft_num_word(s, c) + 1));
-	if (!str || !s)
-		return (NULL);
 	while (s[i])
 	{
 		while (s[i] == c)

@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 23:58:29 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 00:09:12 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/02/22 01:34:25 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size)
 	if (!dst || !src)
 		return (0);
 	if (size == 0)
-		return (strlen(src));
+		return (ft_strlen(src));
 	while (i < (size - 1) && src[i] != '\0')
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	return (strlen(src));
+	return (ft_strlen(src));
 }
