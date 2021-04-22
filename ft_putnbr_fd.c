@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/18 14:32:38 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 23:32:30 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:24:04 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned m;
+	unsigned int	m;
 
 	m = 0;
 	if (n < 0)

@@ -6,11 +6,11 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 01:19:54 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/12 23:40:00 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:15:40 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

@@ -6,14 +6,14 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 00:55:31 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 23:21:28 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:15:07 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90)
-	|| (c >= 48 && c <= 57))
+		|| (c >= 48 && c <= 57))
 		return (1);
 	return (0);
 }

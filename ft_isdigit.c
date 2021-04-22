@@ -6,11 +6,11 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/08 20:02:15 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/14 17:04:19 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:15:35 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
 		return (1);

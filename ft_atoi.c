@@ -6,18 +6,18 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 00:27:41 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/21 01:14:26 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:11:58 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int n;
-	int c;
-	int sig;
+	int	i;
+	int	n;
+	int	c;
+	int	sig;
 
 	i = 0;
 	n = 0;

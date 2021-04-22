@@ -6,7 +6,7 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/13 21:09:00 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 03:04:54 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:14:23 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ void	*ft_calloc(unsigned long int count, unsigned long int size)
 {
 	char	*str;
 
-	if (!(str = malloc(count * size)))
+	str = malloc(count * size);
+	if (!str)
 		return (NULL);
 	ft_memset(str, 0, (count * size));
 	return (str);

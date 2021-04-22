@@ -6,11 +6,11 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/09 01:10:21 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/12 23:06:03 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:15:32 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

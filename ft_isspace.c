@@ -6,14 +6,14 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 23:11:06 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/19 23:12:53 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:15:46 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_isspace(int chr)
+int	ft_isspace(int chr)
 {
 	if (chr == '\n' || chr == '\t' || chr == '\v' || chr == '\r'
-	|| chr == '\f' || chr == ' ')
+		|| chr == '\f' || chr == ' ')
 		return (1);
 	else
 		return (0);

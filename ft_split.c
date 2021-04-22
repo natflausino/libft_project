@@ -6,13 +6,13 @@
 /*   By: nbarreir <nbarreir@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/21 17:08:08 by nbarreir          #+#    #+#             */
-/*   Updated: 2021/02/22 01:53:23 by nbarreir         ###   ########.fr       */
+/*   Updated: 2021/04/21 17:25:55 by nbarreir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char		*ft_cpy(char *dst, const char *src, size_t size)
+static char	*ft_cpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 
@@ -48,7 +48,7 @@ static size_t	ft_num_word(char const *s, char deli)
 	return (str_num);
 }
 
-static char		*ft_apt_word(char const *s, size_t c)
+static char	*ft_apt_word(char const *s, size_t c)
 {
 	char	*str_word;
 
@@ -60,14 +60,15 @@ static char		*ft_apt_word(char const *s, size_t c)
 	return (str_word);
 }
 
-char			**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**str;
 	size_t	i;
 	size_t	j;
 	size_t	count;
 
-	if (!s || !(str = malloc(sizeof(char *) * (ft_num_word(s, c) + 1))))
+	str = malloc(sizeof(char *) * (ft_num_word(s, c) + 1));
+	if (!s || !str)
 		return (NULL);
 	i = 0;
 	count = 0;
